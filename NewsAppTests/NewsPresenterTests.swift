@@ -17,4 +17,13 @@ class NewsPresenterTests: XCTestCase {
         newsViewSpy = nil
         super.tearDown()
     }
+    
+    func test_ViewNavigationBar_displayTitle() {
+        
+        let expectedNavigationBarTitle = "News"
+        
+        presenter.loadView()
+        
+        XCTAssertEqual(expectedNavigationBarTitle,newsViewSpy.displayNavigationTitle, "NavigationTitle is Matched")
+    }
 }

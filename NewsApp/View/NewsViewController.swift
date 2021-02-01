@@ -1,28 +1,24 @@
 import UIKit
 
-final class NewsViewController: UIViewController {
-    
-    private let tableView = UITableView()
+final class NewsViewController: UITableViewController  {
+        
     private var safeArea : UILayoutGuide!
+    private var presenter: NewsPresenter!
     
     override func loadView() {
         super.loadView()
-        view.backgroundColor = .white
         safeArea = view.layoutMarginsGuide
-        
-        setupTableView()
-        
+        presenter = NewsPresenter(view:self)
+
+        presenter.loadView()
     }
     // MARK: - Private Methods
-    private func setupTableView() {
-        
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: safeArea.topAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor).isActive = true
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+
+}
+extension NewsViewController :NewsView {
+    
+    func displayNavigationBar(title: String) {
+        self.title = title
     }
 }
-
 
