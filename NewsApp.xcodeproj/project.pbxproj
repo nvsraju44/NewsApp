@@ -14,6 +14,7 @@
 		3F15EDD525C80DBE006D8B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15EDD425C80DBE006D8B58 /* Assets.xcassets */; };
 		3F15EDD725C8176F006D8B58 /* NewsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15EDD625C8176F006D8B58 /* NewsPresenterTests.swift */; };
 		3F15EDD925C817F7006D8B58 /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15EDD825C817F7006D8B58 /* NewsPresenter.swift */; };
+		3F15EDDE25C82C7D006D8B58 /* NewsViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15EDDD25C82C7D006D8B58 /* NewsViewSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3F15EDD425C80DBE006D8B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F15EDD625C8176F006D8B58 /* NewsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenterTests.swift; sourceTree = "<group>"; };
 		3F15EDD825C817F7006D8B58 /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
+		3F15EDDD25C82C7D006D8B58 /* NewsViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3F15EDD625C8176F006D8B58 /* NewsPresenterTests.swift */,
+				3F15EDDD25C82C7D006D8B58 /* NewsViewSpy.swift */,
 				3F15ED9425C7F2A6006D8B58 /* Info.plist */,
 			);
 			path = NewsAppTests;
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F15EDDE25C82C7D006D8B58 /* NewsViewSpy.swift in Sources */,
 				3F15EDD725C8176F006D8B58 /* NewsPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

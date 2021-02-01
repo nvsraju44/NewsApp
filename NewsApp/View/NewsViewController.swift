@@ -1,6 +1,6 @@
 import UIKit
 
-class NewsViewController: UIViewController {
+final class NewsViewController: UIViewController {
     
     private let tableView = UITableView()
     private var safeArea : UILayoutGuide!
