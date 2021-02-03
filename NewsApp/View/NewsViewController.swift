@@ -64,7 +64,7 @@ final class NewsViewController: UITableViewController  {
 
 // MARK: - NewsView
 
-extension NewsViewController :NewsView {
+extension NewsViewController :NewsView, AlertView {
     
     func showLoadingIndicator() {
         self.activityIndicator.startAnimating()
@@ -77,7 +77,7 @@ extension NewsViewController :NewsView {
     }
     
     func displayNewsRetrievalError(title: String, message: String) {
-        self.title = title
+        self.presentAlert(title: title, message: message)
     }
     
     func refreshNewsView() {
